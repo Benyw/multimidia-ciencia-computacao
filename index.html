@@ -5,44 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./styles.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./functions.js"></script>
-    <title>Ciência da Computação</title>
+    <title>Ciência da Computação - UNISO</title>
 </head>
 <body>
     <div class="container text-center">
-        <div class="row">
-          <div class="col-sm-12 col-lg-3 tab-area active">
-            <span id="btnApresentacao">APRESENTAÇÃO DO CURSO</span>
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-lg-2">
+            <img src="./src/logo-uniso.png" alt="">
           </div>
-          <div class="col-sm-12 col-lg-3 tab-area">
-            <span id="btnMatrizCurricular">MATRIZ CURRICULAR</span>
+          <div class="col-sm-12 col-lg-9">
+            <h1>Ciência da Computação</h1>
           </div>
-          <div class="col-sm-12 col-lg-3 tab-area">
-            <span id="btnCorpoDocente">CORPO DOCENTE</span>
-          </div>
-          <div class="col-sm-12 col-lg-3 tab-area">
-            <span id="btnInformacoes">INFORMAÇÕES</span>
+          <div class="col-sm-12 col-lg-1">
+            <button class="btn btn-outline-dark" id="btnOpcoes">
+              <i class="fa-solid fa-bars" id="iconBars"></i>
+              <i class="fa-solid fa-xmark" id="iconX"></i>
+            </button>
           </div>
         </div>
 
-        <div class="row">
+        <br>
+
+        <div id="OPCOES">
+
+          <div class="row">
+            <nav class="nav nav-tabs justify-content-center">
+              <a class="nav-link active" href="#" id="btnApresentacao">APRESENTAÇÃO DO CURSO</a>
+              <a class="nav-link" href="#" id="btnMatrizCurricular">MATRIZ CURRICULAR</a>
+              <a class="nav-link" href="#" id="btnCorpoDocente">CORPO DOCENTE</a>
+              <a class="nav-link" href="#" id="btnInformacoes">INFORMAÇÕES</a>
+            </nav>
+          </div>
+
+          <div class="row">
             <div class="col-sm-12 col-lg-12 tab-plain" id="plainApresentacao">
-              <span>TESTANDO</span>
+              <span>Apresentando...</span>
             </div>
             <div class="col-sm-12 col-lg-12 tab-plain" id="plainMatrizCurricular">
-              <span id="btnMatrizCurricular">MATRIZ CURRICULAR</span>
+              <span>Matriz curricular...</span>
             </div>
             <div class="col-sm-12 col-lg-12 tab-plain" id="plainCorpoDocente">
-              <span id="btnCorpoDocente">CORPO DOCENTE</span>
+              <span id="btnCorpoDocente">Corpo docente...</span>
             </div>
             <div class="col-sm-12 col-lg-12 tab-plain" id="plainInformacoes">
-              <span id="btnInformacoes">INFORMAÇÕES</span>
+              <span id="btnInformacoes">Informações...</span>
             </div>
           </div>
 
-      </div>
+        </div>
+
+        <div class="row" id="CONTEUDO">
+          <div class="col-sm-12 col-lg-8">
+            <div class="card">
+              <div class="card-body">
+                <p>O curso de Ciências da Computação da UNISO é uma excelente opção para aqueles que desejam seguir carreira na área de tecnologia. A UNISO é uma instituição de ensino superior reconhecida pela qualidade do seu ensino e pela formação de profissionais altamente capacitados.</p>
+                <p>Durante o curso, os estudantes têm a oportunidade de desenvolver habilidades técnicas e criativas em programação, banco de dados, inteligência artificial, segurança da informação e outras áreas relacionadas à computação. Além disso, o curso é voltado para a formação de profissionais capazes de compreender os desafios e as oportunidades da área, e de propor soluções inovadoras e eficientes para problemas reais.</p>
+                <p>Entre os projetos desenvolvidos pelos alunos de Ciências da Computação da UNISO, destacam-se:</p>
+                <ul>
+                  <li>Sistema de gestão escolar: um software desenvolvido para gerenciar as informações de alunos, professores e turmas de uma escola.</li>
+                  <li>Aplicativo de delivery: um aplicativo para pedir comida de restaurantes locais, com interface fácil de usar e sistema de pagamento seguro.</li>
+                  <li>Jogo educativo: um jogo que ensina conceitos básicos de programação, voltado para crianças e adolescentes.</li>
+                  <li>Sistema de reconhecimento facial: um sistema que utiliza algoritmos de inteligência artificial para reconhecer rostos e identificar pessoas em tempo real.</li>
+                  <li>Plataforma de e-commerce: uma plataforma para lojas virtuais, com recursos avançados de busca, recomendação de produtos e integração com redes sociais.</li>
+                </ul>
+                <p>Esses projetos são apenas alguns exemplos do que os alunos de Ciências da Computação da UNISO são capazes de realizar. Com uma formação sólida e uma visão inovadora, esses profissionais estão preparados para enfrentar os desafios do mercado de trabalho e contribuir para o avanço da tecnologia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <p>Matriz curricular...</p>
+          </div>
+        </div>
+
+    </div>
 </body>
 </html>

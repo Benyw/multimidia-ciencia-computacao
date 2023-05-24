@@ -1,11 +1,11 @@
-.tab-area {
-    border: 1px solid #000;
-}
-
-.active {
-    background-color: #ccc;
-}
-
 .tab-plain {
     display: none;
+}
+
+p {
+    text-align: justify;
+}
+
+li {
+    text-align: left;
 }

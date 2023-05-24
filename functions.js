@@ -1,13 +1,27 @@
 $(document).ready(() => {
-    $(".tab-area").click((e) => {
+    showPlain("btnApresentacao");
+    $("#OPCOES").hide();
+    $("#CONTEUDO").show();
+
+    $("#iconX").hide();
+    $("#iconBars").show();
+
+    $(".nav-link").click((e) => {
         resetActives();
         const element = $(e.delegateTarget);
         element.addClass('active');
-        showPlain("btnApresentacao");
+        showPlain(element[0].id);
+    });
+
+    $("#btnOpcoes").click(() => {
+        $("#CONTEUDO").toggle();
+        $("#OPCOES").toggle();
+
+        $("#iconX").toggle();
+        $("#iconBars").toggle();
     });
 
     function showPlain(buttonId) {
-        console.log(buttonId);
         switch(buttonId) {
             case "btnApresentacao": $("#plainApresentacao").show(); break;
             case "btnMatrizCurricular": $("#plainMatrizCurricular").show(); break;
@@ -19,6 +33,6 @@ $(document).ready(() => {
 
     function resetActives() {
         $(".tab-plain").hide();
-        $(".tab-area").removeClass('active');
+        $(".nav-link").removeClass('active');
     }
 });
