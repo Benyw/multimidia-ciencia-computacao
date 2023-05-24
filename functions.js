@@ -1,7 +1,7 @@
 $(document).ready(() => {
+    hideAllPlains();
     showPlain("btnApresentacao");
-    $("#OPCOES").hide();
-    $("#CONTEUDO").show();
+    $("#plainApresentacao").show();
 
     $("#iconX").hide();
     $("#iconBars").show();
@@ -13,13 +13,25 @@ $(document).ready(() => {
         showPlain(element[0].id);
     });
 
-    $("#btnOpcoes").click(() => {
+    /*$("#btnOpcoes").click(() => {
         $("#CONTEUDO").toggle();
         $("#OPCOES").toggle();
 
         $("#iconX").toggle();
         $("#iconBars").toggle();
-    });
+    });*/
+
+    function hideAllPlains() {
+        $("#plainApresentacao").hide();
+        $("#plainMatrizCurricular").hide();
+        $("#plainCorpoDocente").hide();
+        $("#plainInformacoes").hide();
+    }
+
+    function resetActives() {
+        hideAllPlains();
+        $(".nav-link").removeClass('active');
+    }
 
     function showPlain(buttonId) {
         switch(buttonId) {
@@ -27,12 +39,8 @@ $(document).ready(() => {
             case "btnMatrizCurricular": $("#plainMatrizCurricular").show(); break;
             case "btnCorpoDocente": $("#plainCorpoDocente").show(); break;
             case "btnInformacoes": $("#plainInformacoes").show(); break;
-            default: $(".tab-plain").hide(); break;
+            default: hideAllPlains(); break;
         }
     }
-
-    function resetActives() {
-        $(".tab-plain").hide();
-        $(".nav-link").removeClass('active');
-    }
+    
 });
