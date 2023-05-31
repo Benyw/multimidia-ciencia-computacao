@@ -6,6 +6,11 @@ $(document).ready(() => {
     $("#iconX").hide();
     $("#iconBars").show();
 
+    $(".carousel-caption").show();
+    $(".carousel-modulos").click(function() {
+        $(".carousel-caption").toggle();
+    });
+
     $(".nav-link").click((e) => {
         resetActives();
         const element = $(e.delegateTarget);
